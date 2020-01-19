@@ -1,0 +1,106 @@
+
+/********** RESETS **********/
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/********** HERO IMAGE **********/
+
+.hero-image {
+  height: 100vh;
+  width: 100vw;
+  /* This is my own photo */
+  background-image: url('mountainContrast.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+/********** NAVIGATION MENU **********/
+
+.main-nav {
+  /* float: right; */
+  /* I only used float because grid was not allowed for this assignment. I felt the nav going down right side of the screen in mobile was better design as most users are right handed. */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* brought .nav-links to bottom of .main-nav */
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .5);
+  margin: 
+}
+
+.owl-logo {
+  height: 6rem;
+  width: 6rem;
+  background-color: rgb(134, 197, 161);
+  border: 10px lime solid;
+  border-radius: 10% 10% 50% 50%;
+  align-self: center;
+  display: flex;
+  margin: auto;
+}
+
+.owl {
+  height: 5rem;
+  /* width: 2rem; */
+  margin: 0 auto 16px auto;
+}
+
+h1 {
+  margin: auto;
+  color: white;
+}
+
+.nav-links {
+  /* border: 1px yellow solid; */
+  height: 20rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-links li {
+  list-style: none;
+  /* border: 1px white solid; */
+}
+
+a {
+  text-decoration: none;
+  color: tomato;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  padding: 17px 31px;
+  margin: auto;
+}
+
+a:hover {
+  color: lightgrey;
+  transition: .9s;
+  /*
+
+    I took the above code from:
+
+  https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/
+  
+  -transition: a property will begin to do something
+
+  -.3s: over the time of .3 seconds
+  
+  */
+}
+
+/* .my-button {
+  height: 1em;
+  width: 2em;
+} */
+
+.my-button {
+  height: 2rem;
+  width: 4rem;
+  margin: auto;
+}

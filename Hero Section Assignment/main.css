@@ -47,7 +47,6 @@ body {
 }
 
 .nav-links {
-  /* border: 1px yellow solid; */
   height: 15rem;
   margin: 0;
   padding: 0;
@@ -60,7 +59,6 @@ body {
 
 .nav-links li {
   list-style: none;
-  /* border: 1px white solid; */
 }
 
 a {
@@ -100,13 +98,13 @@ a:hover {
 } 
 
 .my-button a {
-  padding:0;
+  padding: 0;
   color: black;
   font-size: 16px;
 }
 
 .my-button:hover {
-  background-color:#2CA492;
+  background-color: #2CA492;
 }
 
 .my-button a:hover {
@@ -117,11 +115,8 @@ a:hover {
 
 @media screen and (min-width: 525px) and (orientation: landscape) {
 
- 
   .owl-logo {
-  
    margin-top: 2rem;
    margin-bottom: 0;
   }
-
 }

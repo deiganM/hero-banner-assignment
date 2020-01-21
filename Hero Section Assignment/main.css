@@ -12,7 +12,7 @@ body {
   height: 100vh;
   width: 100vw;
   /* This is my own photo */
-  background-image: url('mountainContrast.jpg');
+  background-image: url('assets/mountainContrast.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -20,42 +20,35 @@ body {
 /********** NAVIGATION MENU **********/
 
 .main-nav {
-  /* float: right; */
-  /* I only used float because grid was not allowed for this assignment. I felt the nav going down right side of the screen in mobile was better design as most users are right handed. */
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* brought .nav-links to bottom of .main-nav */
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, .5);
-  margin: 
 }
 
-.owl-logo {
-  height: 6rem;
-  width: 6rem;
-  background-color: rgb(134, 197, 161);
-  border: 10px lime solid;
-  border-radius: 10% 10% 50% 50%;
-  align-self: center;
+.owl-logo { 
   display: flex;
-  margin: auto;
+  margin: auto; 
+  justify-content: center;
 }
 
 .owl {
-  height: 5rem;
-  /* width: 2rem; */
-  margin: 0 auto 16px auto;
+  height: 7rem;
 }
 
-h1 {
+.main-nav h1 {
   margin: auto;
   color: white;
+  font-size: 30px;
+  text-align: center;
+  max-width: 80vw;
 }
 
 .nav-links {
   /* border: 1px yellow solid; */
-  height: 20rem;
+  height: 15rem;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -76,6 +69,7 @@ a {
   font-family: Trebuchet MS, Helvetica, sans-serif;
   padding: 17px 31px;
   margin: auto;
+  font-size: 20px;
 }
 
 a:hover {
@@ -94,13 +88,40 @@ a:hover {
   */
 }
 
-/* .my-button {
-  height: 1em;
-  width: 2em;
-} */
-
 .my-button {
   height: 2rem;
-  width: 4rem;
+  width: 8rem;
   margin: auto;
+  border-radius: 5px;
+  border-style: none;
+  background-color: lightgrey;
+  display: flex;
+  background-color: #86C5A1;
+} 
+
+.my-button a {
+  padding:0;
+  color: black;
+  font-size: 16px;
+}
+
+.my-button:hover {
+  background-color:#2CA492;
+}
+
+.my-button a:hover {
+  color: white;
+}
+
+/********** MEDIA QUERIES **********/
+
+@media screen and (min-width: 525px) and (orientation: landscape) {
+
+ 
+  .owl-logo {
+  
+   margin-top: 2rem;
+   margin-bottom: 0;
+  }
+
 }
